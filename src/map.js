@@ -26,6 +26,7 @@ let shoppingList = [
   }
 ];
 
+
 //for loop using Array of shopping list items
 
 //First set a variable to create a new empty Array.
@@ -44,3 +45,11 @@ for (let i = 0, let max = shoppingList.length, i <=  max , i++){
   //on the following line we will use the for loop to 'push' the information we want into our empty Array
   shoppingList_names.push(shoppingList[i].name);
 }
+
+
+//map function
+
+//
+let shoppingList_names = shoppingList.map(function(shoppingList){
+  return shoppingList.name;
+});
