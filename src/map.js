@@ -49,7 +49,11 @@ for (let i = 0, let max = shoppingList.length, i <=  max , i++){
 
 //map function
 
-//
+//Here we are saying lets hold on to the variable 'shoppingList' and assign it to the value of the map function.
+//We use dot notation to attach the map function to the array we want to work with
+//The map function receives an anonymous function that can take in an argument made up of what you want to work with, the index, and the array.
+//In this case we only use the first part of the argument.
 let shoppingList_names = shoppingList.map(function(shoppingList){
+  //Be sure to return in your callback.
   return shoppingList.name;
 });
